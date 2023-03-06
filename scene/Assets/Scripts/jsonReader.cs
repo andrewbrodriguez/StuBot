@@ -34,7 +34,9 @@ public class jsonReader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        myUsers = JsonUtility.FromJson<userList>(textJSON.text);
+
     }
 }
    
